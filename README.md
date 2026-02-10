@@ -296,18 +296,6 @@ Backward pass: Band-specific gradient scaling via custom PyTorch function
 - λ_σ (strength residual): 0.5
 - λ_bound (positivity constraint): 0.5
 
-## Expected Performance
-
-Based on the paper's reported results:
-
-| Metric | σ_HT | E_HT |
-|--------|------|------|
-| **RMSE** | ~2-5 MPa | ~100-200 MPa |
-| **R²** | >0.99 | >0.99 |
-| **MAPE** | <5% | <2% |
-
-Physics residuals should exhibit near-zero mean with small standard deviation (<1% of output range).
-
 ## Troubleshooting
 
 ### Issue: Training diverges early
